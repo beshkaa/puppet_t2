@@ -16,4 +16,4 @@ version 3
 10. Apache: .htaccess rewrite rules changed for virutal site
 11. MySQL: /var/lib/mysql owner/mode has been changed
 12. MySQL: pid file location has been changed in my.cnf
-13: MySQL: test user has been created (required for site to access DB).
+13: MySQL: test user has been created (required for site to access DB)
