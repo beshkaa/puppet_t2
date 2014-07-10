@@ -1,0 +1,21 @@
+# virtual server config
+<VirtualHost _default_:*>
+    DocumentRoot <%= @doc_root %>
+
+    <Directory "<%= @doc_root %>">
+
+        Options Indexes FollowSymLinks
+        AllowOverride All
+
+        Order allow,deny
+        Allow from all
+
+	<% if @rewrite %>
+        RewriteEngine on
+        RewriteCond <%= @rewrite_cond %>
+        RewriteRule <%= @rewrite_rule %>
+        <% end %>
+    </Directory>
+
+</VirtualHost> 
+
